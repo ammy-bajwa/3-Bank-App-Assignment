@@ -8,10 +8,7 @@ import 'normalize.css/normalize.css'
 import './styles/style.css';
 
 
-const store = configureStore()
-store.dispatch(addAccount({name:'Amir Ali',amount:234}));
-// store.dispatch(addAccount({name:'Talha Ali'}));
-
+const store = configureStore();
 const jsx = (
     <Provider store={store}>
         <AppRoute />
