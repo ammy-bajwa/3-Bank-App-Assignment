@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const depositArr = []
 class DepositAmount extends React.Component {
@@ -14,11 +15,12 @@ class DepositAmount extends React.Component {
     };
     render() {
         return (
-            <div>
-                <h1>Deposit Amount</h1>
+            <div className='main_div container-fluid'>
+            <div className='title'><h1>Deposit Amount</h1></div>
                 <form onSubmit={this.onSubmit}>
-                    <input type='number' placeholder='Deposit Amount' name='deposit' />
-                    <button type='submit'>Deposit</button>
+                    <input type='number' className='input' placeholder='Deposit Amount' name='deposit' />
+                    <button type='submit' className='btn' id='Deposit_btn'>Deposit</button>
+                    <button className='btn'><Link to='/show_account'>Ok</Link></button>
                 </form>
             </div>
         );

@@ -21,14 +21,15 @@ export default (state = [], action) => {
             });
         case 'WITHDRAW_AMOUNT':
             return state.map((account) => {
-                if (account.id == action.id) {
+                if (account.id == action.id && action.withDrawAmount <= account.amount) {
                     return {
                         ...account,
-                        amount: account.amount - action.withDraeAmount
+                        amount: account.amount - action.withDrawAmount
                     }
                 }
                 else {
-                    return account
+                    alert('enter valid amount');
+                    return account;
                 }
             });
         case 'EDIT_ACCOUNT':
@@ -41,7 +42,7 @@ export default (state = [], action) => {
                 } else {
                     return account;
                 }
-                });
+            });
         default:
             return state;
     }

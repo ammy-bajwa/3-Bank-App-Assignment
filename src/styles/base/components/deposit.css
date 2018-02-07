@@ -1,0 +1,23 @@
+.main_div{
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;    
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#Deposit_btn{
+    margin: 0px 20px;
+}

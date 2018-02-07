@@ -6,7 +6,6 @@ import { addAccount } from '../actions/account';
 const AddAccount = (props) => (
     <div>
         <AccountForm onSubmit={(account) => {
-            console.log(account);
             props.dispatch(addAccount(account));
             props.history.push('/');
         }} />

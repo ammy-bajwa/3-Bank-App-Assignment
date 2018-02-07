@@ -28,10 +28,10 @@ export const depositAmount = ( id , depositAmount) => ({
     depositAmount
 });
 //WithDraw Amount
-export const withDrawAmount = ( id , withDraeAmount) => ({
+export const withDrawAmount = ( id , withDrawAmount) => ({
     type: 'WITHDRAW_AMOUNT',
     id,
-    withDraeAmount
+    withDrawAmount
 });
 //edit Account
 

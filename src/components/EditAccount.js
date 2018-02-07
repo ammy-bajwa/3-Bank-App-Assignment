@@ -7,8 +7,8 @@ const EditAccount = (props) => (
         <AccountForm
         account = {props.account}
         onSubmit={(account)=>{
-            props.dispatch(editAccount(props.account.id,account))
-            console.log('Updated',account);
+            props.dispatch(editAccount(props.account.id,account));
+            console.log('Updated',account);           
         }}
         />
     </div>

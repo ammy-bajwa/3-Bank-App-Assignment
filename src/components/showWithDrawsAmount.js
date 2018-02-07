@@ -7,18 +7,21 @@ class showWithDrawsAmount extends React.Component {
     }
     render() {
         return (
-            <div>
-                <h1>All WithDraw Details</h1>
-                <ol>
-                {this.state.withDrawArr.map((withDraw,index)=>{
+            <div className="container-fluid main_div">
+                <div className='title'>
+                    <h1>All WithDraw Details</h1>
+                </div>
+                <ul>
+                {this.state.withDrawArr == null ? <h2>There is no withDraw details </h2> : this.state.withDrawArr.map((withDraw,index)=>{
                     return(
                         <div key={index}>
-                            <li>{`WithDraw number ${index+1} is ${withDraw}`}</li>
+                            <li><h4>{`WithDraw number ${index+1} is ${withDraw}`}</h4></li>
                         </div>
                     );
                 })}
-                </ol>
-                <button><Link to='/'>Go Home</Link></button> 
+               
+                </ul>
+                <button className='btn'><Link to='/'>Home</Link></button> 
                 <hr />
             </div>
         );

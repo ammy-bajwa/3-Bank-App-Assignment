@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const withDrawArr = []
 class WithDrawAmount extends React.Component {
@@ -8,17 +9,20 @@ class WithDrawAmount extends React.Component {
         withDrawArr.push(userAmount);
         console.log(withDrawArr);
         const localWithDrawArr = JSON.stringify(withDrawArr);
-        localStorage.setItem('withDrawArr',localWithDrawArr);
+        localStorage.setItem('withDrawArr', localWithDrawArr);
         this.props.onSubmit(userAmount)
-         
+
     }
     render() {
         return (
-            <div>
-                <h1>withDraw Amount</h1>
+            <div className="container-fluid main_div">
+                <div className='title'>
+                    <h1>WithDraw Amount</h1>
+                </div>
                 <form onSubmit={this.onSubmit}>
-                    <input type='number' placeholder='withDraw Amount' name='withDraw'/>
-                    <button type='submit'>WithDraw Amount</button>
+                    <input type='number' className='input' placeholder='withDraw Amount' name='withDraw' />
+                    <button className="btn" id='withDraw_btn' type='submit'>WithDraw</button>
+                    <button className='btn'><Link to='/show_account'>Ok</Link></button>
                 </form>
             </div>
         );

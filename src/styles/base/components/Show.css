@@ -1,0 +1,27 @@
+.main_div{
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+}
+.show_title{
+    display: flex;
+    justify-content: center;
+}
+.account_div{
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+}
+.account_btn_div{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+}
+.account_btn{
+    margin: 10px;
+}
