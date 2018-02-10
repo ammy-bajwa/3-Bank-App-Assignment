@@ -10,12 +10,10 @@ import EditAccount from './EditAccount';
 
 
 const AccountList = (props) => (
-    <div className='main_div container-fluid'>
+    <div className='main_div_show container-fluid'>
+            <h1 className="text-center">Account List</h1>
         <div className='show_title container-fluid'>
-            <h1>Account List</h1>
-        </div>
-        <div className='show_title container-fluid'>
-            {props.accounts.length == 0 ? <h2>There is no account</h2> : ''}
+            {props.accounts.length == 0 ? <h2>There is no account yet please add an account</h2> : ''}
         </div>
         {props.accounts.map((account, index) => {
             return (
@@ -38,7 +36,7 @@ const AccountList = (props) => (
                             <button onClick={() => {
                                 props.dispatch(removeAccount(account.id))
                             }}
-                                className='btn account_btn'
+                                className='btn btn-danger account_btn'
                             >Remove Account</button><br />
                         </div>
                         <Route path='/deposit' component={
@@ -63,7 +61,7 @@ const AccountList = (props) => (
                                     }}
                                 />)} exact={true} />
                         <Route path='/edit' component={
-                            () => (<EditAccount id={account.id} />)}
+                            () => (<EditAccount id={account.id} history={props.history} />)}
                             exact={true} />
                     </div>
                 </Router>
@@ -71,7 +69,6 @@ const AccountList = (props) => (
 
             );
         })}
-        <button className='btn'><Link to='/'>Home</Link></button>
     </div>
 );
 

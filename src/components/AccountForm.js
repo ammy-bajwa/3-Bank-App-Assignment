@@ -46,11 +46,9 @@ class AccountForm extends React.Component {
     };
     render() {
         return (
-            <div className='main-div container-fluid'>
-                <div className="form_title">
-                    <h2>Add Account Details</h2>
-                </div>
-             <form onSubmit={this.onSubmit}>
+            <div className='container-fluid'>
+                <h2 className="text-center">Add Account Details</h2>
+                <form onSubmit={this.onSubmit}>
                     <div className='form_main_div'>
                         <div className='inputs_div'>
                             <input type='text'
@@ -90,13 +88,9 @@ class AccountForm extends React.Component {
                                 </label>
                             </div>
                         </div>
-
-
                         <button className='btn'>Add Account</button>
                     </div>
-
                 </form>
-                <button className='btn'><Link to='/'>Home</Link></button>
             </div>
         );
     }

@@ -8,7 +8,8 @@ const EditAccount = (props) => (
         account = {props.account}
         onSubmit={(account)=>{
             props.dispatch(editAccount(props.account.id,account));
-            console.log('Updated',account);           
+            console.log('Updated',account);    
+            props.history.push('/');       
         }}
         />
     </div>

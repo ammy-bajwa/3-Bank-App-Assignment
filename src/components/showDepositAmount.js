@@ -21,9 +21,6 @@ class ShowDepositAmount extends React.Component {
                         );
                     })}
                 </ul>
-                <button className="btn"><Link to='/'>Home</Link></button>
-                <hr />
-
             </div>
         );
     };

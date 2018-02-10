@@ -8,13 +8,9 @@
 @import './base/components/showDepositAmount.css';
 @import './base/components/showWithDrawsAmount.css';
 
-
-
-.main_div{
-    border: 3px solid black;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    padding: 20px;
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) ),url('/images/bg.jpg');
+    background-attachment: fixed;
+    font-family: sans-serif;
+    color: 	#a6a6a6	;
 }

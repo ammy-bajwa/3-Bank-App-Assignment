@@ -12,13 +12,15 @@ const AppRoute = () => {
         <Router>
             <div className='main_div container-fluid'>
                 <Header />
-                <Route path='/' component={BankApplication} exact={true} />
+                <div>
+                <Route path='/' component={BankApplication}  exact={true}/>
                 <Route path='/add_account' component={AddAccount} />
-                <Route path='/show_account' component={ShowAccounts}  exact={true} />
+                <Route path='/show_account' component={ShowAccounts}  />
                 <Route path='/transactions' component={Transactions} />
                 <Route path='/all_deposits' component={ShowDepositAmount} />
                 <Route path='/all_withDraws' component={showWithDrawsAmount} />
-
+                </div>
+              
             </div>
         </Router>
     );

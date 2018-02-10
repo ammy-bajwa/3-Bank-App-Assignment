@@ -1,6 +1,4 @@
-.main_div{
-    border: 3px solid black;
-    border-radius: 15px;
+.main_div_show{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -11,8 +9,6 @@
     justify-content: center;
 }
 .account_div{
-    border: 3px solid black;
-    border-radius: 15px;
     margin: 20px;
     padding: 20px;
 }
@@ -21,7 +17,9 @@
     flex-direction: row;
     margin: 20px;
     padding: 20px;
+    color: black;
 }
 .account_btn{
     margin: 10px;
+    color: black;
 }

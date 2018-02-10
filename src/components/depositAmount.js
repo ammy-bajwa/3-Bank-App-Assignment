@@ -10,7 +10,7 @@ class DepositAmount extends React.Component {
         console.log(depositArr);
         const localdepositArr = JSON.stringify(depositArr);
         localStorage.setItem('depositArr',localdepositArr);
-        return this.props.onSubmit(userAmount)
+        return this.props.onSubmit(userAmount);
 
     };
     render() {
@@ -18,7 +18,7 @@ class DepositAmount extends React.Component {
             <div className='main_div container-fluid'>
             <div className='title'><h1>Deposit Amount</h1></div>
                 <form onSubmit={this.onSubmit}>
-                    <input type='number' className='input' placeholder='Deposit Amount' name='deposit' />
+                    <input type='number' className='input' placeholder='Deposit Amount' name='deposit' required/>
                     <button type='submit' className='btn' id='Deposit_btn'>Deposit</button>
                     <button className='btn'><Link to='/show_account'>Ok</Link></button>
                 </form>

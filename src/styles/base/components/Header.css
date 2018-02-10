@@ -1,19 +1,8 @@
-.head-title{
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 20px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
+.headerMainDiv{
+    margin-top: 10%;
+    color: #a6a6a6;
 }
-.head-btn{
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-}
-.nav-btn{
-    margin: 0px 20px;
+ul{
+    list-style-type: none;
+    font-size: 15px;
 }
